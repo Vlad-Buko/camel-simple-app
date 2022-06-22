@@ -1,6 +1,8 @@
 Camel ActiveMQ Project
 ======================
 
+First Application on ActiveMQ, Karaf, Camel
+
 This project embeds Apache ActiveMQ together with Apache Camel.
 
 To build this project use
