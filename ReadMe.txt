@@ -1,5 +1,4 @@
-Camel ActiveMQ Project
-======================
+# Message router from xml to json
 
 First Application on ActiveMQ, Karaf, Camel
 
