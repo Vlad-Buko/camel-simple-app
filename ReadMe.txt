@@ -1,5 +1,4 @@
 # Message router from xml to json
-# Andersen
 
 First Application on ActiveMQ, Karaf, Camel
 
