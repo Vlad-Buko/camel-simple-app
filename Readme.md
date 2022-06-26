@@ -21,12 +21,13 @@ it to Apache ActiveMQ.
     1. На компьютере должен быть установлен Apache ActiveMQ Artemis, 
     Вызываем командой:  activemq start
     
-![IMAGE 2022-06-26 23:21:56](https://user-images.githubusercontent.com/72036166/175832460-429fcdab-ee55-43a6-bb39-e71840dc7a83.jpg)
+![IMAGE 2022-06-26 23:27:51](https://user-images.githubusercontent.com/72036166/175832705-3104525c-8948-4668-b330-4acef5844285.jpg)
     
     2. Перед запуском в приложении, указать путь к папке, в которую будем 
 добавлять файлы XML. 
 
-![IMAGE 2022-06-26 23:23:29](https://user-images.githubusercontent.com/72036166/175832507-61d8fd5f-ab75-4459-80b0-e7cc4617312e.jpg)
+![IMAGE 2022-06-26 23:29:05](https://user-images.githubusercontent.com/72036166/175832692-421fa992-6884-4fb2-b50b-97578485ed6d.jpg)
+
 
     3. 
 
