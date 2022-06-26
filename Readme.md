@@ -1,14 +1,14 @@
 # Message router from XML to JSON #
 
 
-    This application can accept as input a certain file with an XML extension, this file is on our computer. Next, we write down the required the values
-    that we want to write, but already in a file with the JSON extension, which we pass it to Apache ActiveMQ.
+ This application can accept as input a certain file with an XML extension, this file is on our computer. Next, we write down the required the values
+that we want to write, but already in a file with the JSON extension, which we pass it to Apache ActiveMQ.
 
 
 # Роутер сообщений из формата XML в формат JSON #
     
     
-    Это приложение может принимать на вход определённый файл с расширением XML,
+ Это приложение может принимать на вход определённый файл с расширением XML,
 этот файлик находится на нашем компьютере. Далее мы прописываем нужные нам 
 значения, которые хотим записать, но уже в файлик с расширением JSON, который 
 передаём в Apache ActiveMQ.
