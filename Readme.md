@@ -14,6 +14,12 @@ that we want to write, but already in a file with the JSON extension, which we p
 передаём в Apache ActiveMQ.
 
 
+## Introduction
+
+
+  In order for our application to be able to send a message to the queue, we will do the following:
+
+
 ## Введение
 
  Для того, что бы наше приложение смогло передавать сообщение в очередь, выпоолним следующее:
