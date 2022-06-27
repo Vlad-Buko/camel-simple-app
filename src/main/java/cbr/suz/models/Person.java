@@ -1,8 +1,5 @@
 package cbr.suz.models;
 
-import com.sun.xml.internal.txw2.annotation.XmlAttribute;
-import com.sun.xml.txw2.annotation.XmlValue;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -10,6 +7,8 @@ import java.util.List;
 
 /**
  * Created by Vladislav Domaniewski
+ *
+ *      В этом же классе, описываем тег <ФизическоеЛицо> а именно его поля.
  */
 
 @XmlAccessorType(XmlAccessType.FIELD)

@@ -6,6 +6,8 @@ import javax.xml.bind.annotation.XmlElement;
 
 /**
  * Created by Vladislav Domaniewski
+ *
+ *      Здесь описывается тег <РТ_Организация> и его поля.
  */
 
 @XmlAccessorType(XmlAccessType.FIELD)
