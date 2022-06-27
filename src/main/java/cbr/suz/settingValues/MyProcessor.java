@@ -1,9 +1,13 @@
 package cbr.suz.settingValues;
 
 import cbr.suz.models.FileUntilSendQueyed;
+import cbr.suz.models.KeyProperties;
+import cbr.suz.models.Organization;
 import cbr.suz.models.Person;
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
+
+import java.util.List;
 
 /**
  * Created by Vladislav Domaniewski
@@ -15,7 +19,6 @@ import org.apache.camel.Processor;
 public class MyProcessor implements Processor {
     public void process(Exchange exchange) throws Exception {
         FileUntilSendQueyed file = exchange.getIn().getBody(FileUntilSendQueyed.class);
-        System.out.println(exchange.getIn().getBody());
-        file.setKeyProperties(file.getKeyProperties());
+        // Здесь мы можем устанавливать свои параметры в новый формат JSON
     }
 }

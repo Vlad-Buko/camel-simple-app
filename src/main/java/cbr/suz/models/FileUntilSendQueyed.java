@@ -18,6 +18,7 @@ import java.util.List;
 @XmlRootElement(name = "Справочник.Сотрудники")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class FileUntilSendQueyed {
+
     @XmlElement(name = "КлючевыеСвойства")
     private List<KeyProperties> keyProperties;
 
@@ -25,7 +26,7 @@ public class FileUntilSendQueyed {
         return keyProperties;
     }
 
-    public void setKeyProperties(List<KeyProperties> keyProperties) {
+    public void setKeyProperties() {
         this.keyProperties = keyProperties;
     }
 

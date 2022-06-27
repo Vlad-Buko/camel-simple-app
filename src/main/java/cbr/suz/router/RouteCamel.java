@@ -41,9 +41,7 @@ public class RouteCamel extends RouteBuilder {
         // JSON data Format
         JacksonDataFormat jsonDataFormat = new JacksonDataFormat(FileUntilSendQueyed.class);
         from("file:src/main/inputFolder").doTry().unmarshal(xmlDataFormat)
-                .log("fdff")
                 .process(new MyProcessor()).marshal(jsonDataFormat)
-                .log("dsd")
                 .to("jms:DesinationQueue").doCatch(Exception.class)
                 .process(new Processor() {
                     public void process(Exchange exchange) throws Exception {

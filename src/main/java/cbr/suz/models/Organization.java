@@ -12,12 +12,20 @@ import javax.xml.bind.annotation.XmlElement;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Organization {
+
     @XmlElement(name = "КодЗаказчика")
     private String codeOrder;
 
-
     @XmlElement(name = "ИНН")
     private String inn;
+
+    public String getCodeOrder() {
+        return codeOrder;
+    }
+
+    public void setCodeOrder(String codeOrder) {
+        this.codeOrder = codeOrder;
+    }
 
     public String getInn() {
         return inn;
@@ -32,13 +40,5 @@ public class Organization {
         return "Organization{" +
                 "codeOrder='" + codeOrder + '\'' +
                 '}';
-    }
-
-    public String getCodeOrder() {
-        return codeOrder;
-    }
-
-    public void setCodeOrder(String codeOrder) {
-        this.codeOrder = codeOrder;
     }
 }
