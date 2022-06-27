@@ -1,5 +1,7 @@
-package cbr.suz;
+package cbr.suz.router;
 
+import cbr.suz.settingValues.MyProcessor;
+import cbr.suz.models.FileUntilSendQueyed;
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;
@@ -10,6 +12,8 @@ import javax.xml.bind.JAXBContext;
 
 /**
  * Created by Vladislav Domaniewski
+ * <p>
+ * Here created router for transfer
  */
 
 public class RouteCamel extends RouteBuilder {
@@ -17,15 +21,16 @@ public class RouteCamel extends RouteBuilder {
     public void configure() throws Exception {
         // XML data Format
         JaxbDataFormat xmlDataFormat = new JaxbDataFormat();
-        JAXBContext context = JAXBContext.newInstance(ReadyFileAfterQueued.class);
+        JAXBContext context = JAXBContext.newInstance(FileUntilSendQueyed.class);
         xmlDataFormat.setContext(context);
 
         // JSON data Format
-        JacksonDataFormat jsonDataFormat = new JacksonDataFormat(ReadyFileAfterQueued.class);
-
-        from("file:/Users/vladislav_domaniewski/Documents/inputFolder").doTry().unmarshal(xmlDataFormat)
+        JacksonDataFormat jsonDataFormat = new JacksonDataFormat(FileUntilSendQueyed.class);
+        from("file:src/main/inputFolder").doTry().unmarshal(xmlDataFormat)
+                .log("fdff")
                 .process(new MyProcessor()).marshal(jsonDataFormat)
-                .to("jms:queue:DesinationQueue").doCatch(Exception.class)
+                .log("dsd")
+                .to("jms:DesinationQueue").doCatch(Exception.class)
                 .process(new Processor() {
                     public void process(Exchange exchange) throws Exception {
                         Exception cause = exchange.getProperty(Exchange.EXCEPTION_CAUGHT, Exception.class);
