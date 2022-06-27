@@ -14,15 +14,9 @@ import java.util.List;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 public class KeyProperties {
+
     @XmlElement(name = "ФизическоеЛицо")
     private List<Person> person;
-
-    @Override
-    public String toString() {
-        return "KeyProperties{" +
-                "name='" + person + '\'' +
-                '}';
-    }
 
     public List<Person> getPerson() {
         return person;
@@ -30,5 +24,12 @@ public class KeyProperties {
 
     public void setPerson(List<Person> person) {
         this.person = person;
+    }
+
+    @Override
+    public String toString() {
+        return "KeyProperties{" +
+                "name='" + person + '\'' +
+                '}';
     }
 }

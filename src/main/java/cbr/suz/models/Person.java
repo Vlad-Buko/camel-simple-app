@@ -13,6 +13,7 @@ import java.util.List;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Person {
+
     @XmlElement(name = "СтраховойНомерПФР")
     private String insuranceNumber;
 
@@ -21,6 +22,14 @@ public class Person {
 
     @XmlElement(name = "РТ_Организация")
     private List<Organization> organizationList;
+
+    public String getInsuranceNumber() {
+        return insuranceNumber;
+    }
+
+    public void setInsuranceNumber(String insuranceNumber) {
+        this.insuranceNumber = insuranceNumber;
+    }
 
     public String getNamePerson() {
         return namePerson;
@@ -36,14 +45,6 @@ public class Person {
 
     public void setOrganizationList(List<Organization> organizationList) {
         this.organizationList = organizationList;
-    }
-
-    public String getInsuranceNumber() {
-        return insuranceNumber;
-    }
-
-    public void setInsuranceNumber(String insuranceNumber) {
-        this.insuranceNumber = insuranceNumber;
     }
 
     @Override
