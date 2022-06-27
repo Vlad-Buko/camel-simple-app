@@ -1,5 +1,6 @@
 package cbr.suz;
 
+import cbr.suz.router.RouteCamel;
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.apache.camel.CamelContext;
 import org.apache.camel.component.jms.JmsComponent;
