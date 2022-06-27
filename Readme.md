@@ -34,6 +34,23 @@ that we want to write, but already in a file with the JSON extension, which we p
 
 ![IMAGE 2022-06-26 23:29:05](https://user-images.githubusercontent.com/72036166/175832692-421fa992-6884-4fb2-b50b-97578485ed6d.jpg)
 
+ 3. Место для дополнительной логики.
+
+![IMAGE 2022-06-28 01:19:19](https://user-images.githubusercontent.com/72036166/176045342-4b5b4fce-e7b5-4949-aff1-a8f4c26659ef.jpg)
+
+ 4. Можем запускать приложение, и проверяем очередь сообщений в ActiveMQ.
+ 
+ ![IMAGE 2022-06-28 01:21:53](https://user-images.githubusercontent.com/72036166/176045576-482b8fc4-f036-48aa-93a6-464712a31fe1.jpg)
+
+ Приложение работает, и записывает. 
+ 
+ ##  Используемый стек 
+ 
+1. Apache Camel
+2. Apache ActiveMQ
+3. Apache Karaf (Пока без него)
+
+
 
 
 
