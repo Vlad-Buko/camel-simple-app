@@ -8,7 +8,8 @@ import java.util.List;
 /**
  * Created by Vladislav Domaniewski
  *
- *      В данном классе, мы продолжаем описывать XML
+ *      В данном классе, мы продолжаем описывать XML.
+ *      В данном классе, это тег <КлючевыеСвойства>
  */
 
 @XmlAccessorType(XmlAccessType.FIELD)
