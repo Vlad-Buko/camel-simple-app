@@ -13,6 +13,14 @@ import java.util.List;
  *      Аннотация @XmlAccessorType указывает, что чтение будет производится
  * по полям XML документа, и конечно же @XmlElement указывает на один элемент,
  * в котором находится значение.
+ *
+ *      In this class, the xml file that we send to the queue will be written,
+ * the @XmlRootElement annotation points to an XML element that contains
+ * other attributes, but there can also be one attribute.
+
+       The @XmlAccessorType annotation indicates that the read will be performed.
+ * across the fields of the XML document, and of course @XmlElement points to one 
+ * element in which the value is located.
  */
 
 @XmlRootElement(name = "Справочник.Сотрудники")
