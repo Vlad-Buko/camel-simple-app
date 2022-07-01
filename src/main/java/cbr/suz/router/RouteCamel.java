@@ -28,6 +28,22 @@ import javax.xml.bind.JAXBContext;
  *      Далее мы читаем с xmlDataFormat, и можем изменить значения с входящего XML
  * файла. И после того, как программа прошла, мы добавляем в очередь, и отправляем
  * в очередь ActiveMQ, с названием DestinationQueue.
+ *
+ *      This can be said to be the key class for passing messages to the queue. Here
+ * as in many standard applications working with Apache Camel, we inherit
+ * from the RouteBuilder class, and implement the configure() method.
+ 
+ *      In this class, we create a JAXB object, then a JAXBContext object,
+ * which we further set in xmlDataFormat, in other words, we create a JAXB context.
+ 
+ *      In the Java serialization library - objects, add our class, model
+ * describing our XML configuration. And later, we specify the path to the file, in this
+ * example, I did not specify the file far, but placed it directly in the directory
+ * with the project.
+ *
+ *      Next, we read from xmlDataFormat, and we can change the values ​​from the incoming XML
+ * file. And after the program has passed, we add to the queue, and send
+ * to an ActiveMQ queue named DestinationQueue.
  */
 
 public class RouteCamel extends RouteBuilder {
